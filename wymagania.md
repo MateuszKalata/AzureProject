@@ -16,25 +16,25 @@ Projekt: EY Document semantic search
 1.	Architektura
  
 1.	Scrum
-  1.	Kamienie milowe
-    *	Projekt modelu wyszukiwania i klasyfikacji
-    *	Wytrenowanie modelu i jego przetestowanie
-    *	Implementacja przetwarzania dokumentów z Wikipedii
-    *	Integracja elementów systemu i dodanie prostego interfejsu użytkownika
-  1.	Zadania
-    *	Ustawienie architektury Azure do nauki i obsługi modelu
-    *	Stworzenie modelu AI
-    *	Zebranie danych testowych
-    *	Nauczenie modelu
-    *	Ustawienie architektury Azure do przetwarzania dokumentów z Wikipedii
-    *	Stworzenie algorytmów przetwarzania dokumentów
-    *	Postawienie App Service z interfejsem użytkownika
-    *	Integracja komponentów 
-  1.	Repozytorium
-    * GitHub
-  1.	Harmonogram realizacji kamieni milowych
-    *	10.12.2020
-    *	23.12.2020
-    *	14.01.2021
-    *	27.01.2021
+    1.	Kamienie milowe
+        *	Projekt modelu wyszukiwania i klasyfikacji
+        *	Wytrenowanie modelu i jego przetestowanie
+        *	Implementacja przetwarzania dokumentów z Wikipedii
+        *	Integracja elementów systemu i dodanie prostego interfejsu użytkownika
+    1.	Zadania
+        *	Ustawienie architektury Azure do nauki i obsługi modelu
+        *	Stworzenie modelu AI
+        *	Zebranie danych testowych
+        *	Nauczenie modelu
+        *	Ustawienie architektury Azure do przetwarzania dokumentów z Wikipedii
+        *	Stworzenie algorytmów przetwarzania dokumentów
+        *	Postawienie App Service z interfejsem użytkownika
+        *	Integracja komponentów 
+    1.	Repozytorium
+        * GitHub
+    1.	Harmonogram realizacji kamieni milowych
+        *	10.12.2020
+        *	23.12.2020
+        *	14.01.2021
+        *	27.01.2021
 
