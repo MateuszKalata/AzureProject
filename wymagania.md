@@ -22,7 +22,8 @@ Data ostatniej modyfikacji: 26.11.2020
             * System przygotowuje wyniki końcowe (zestaw najlepiej dopasowanych fragmentów i ich źródeł) i je wyświetla
             * Użytkownik wybiera interesujący go fragment i przechodzi do źródła
 1.	Architektura
- 
+
+    ![Projekt architektury](AzureProjektArchitektury.png)
 1.	Scrum
     1.	Kamienie milowe
         *	Projekt modelu wyszukiwania i klasyfikacji
