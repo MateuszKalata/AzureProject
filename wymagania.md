@@ -1,10 +1,12 @@
 Projekt: EY Document semantic search
 
-Autorzy: 
--Mateusz Kalata, 
--Jan Przychodniak, 
--Natalia Strawa, 
--Jan Konarski
+Versja: 1.0
+
+Autorzy: Mateusz Kalata, Jan Przychodniak, Natalia Strawa, Jan Konarski
+
+Data utworzenia: 26.11.2020
+
+Data ostatniej modyfikacji: 26.11.2020
 
 1.	Wymagania
     1.	Funkcjonalne
