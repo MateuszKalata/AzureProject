@@ -1,5 +1,11 @@
 Projekt: EY Document semantic search
 
+Autorzy: 
+-Mateusz Kalata, 
+-Jan Przychodniak, 
+-Natalia Strawa, 
+-Jan Konarski
+
 1.	Wymagania
     1.	Funkcjonalne
         * Aplikacja ma udostępniać prosty interfejs graficzny pozwalający podać szukaną frazę oraz stronę do prezentacji wyników wyszukiwania.
