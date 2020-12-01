@@ -24,6 +24,9 @@
     *   System przeszukuje zakres dokumentów pod kątem znaczeniowo podobnych fragmentów
     *   System przygotowuje wyniki końcowe (zestaw najlepiej dopasowanych fragmentów i ich źródeł) i je wyświetla
     *   Użytkownik wybiera interesujący go fragment i przechodzi do źródła
+### 1.4.    Stos technologiczny
+*  Azure Machine Learning Studio
+*  Python
     
 ---
 
