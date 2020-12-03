@@ -27,12 +27,17 @@
 ### 1.4.    Stos technologiczny
 *  Azure Machine Learning Studio
 *  Python
+*  Biblioteka Doc2Vec
     
 ---
 
 ## 2.   Architektura
+*  Pobranie danych z Wikipedii i dokonanie pre-procesingu z wykorzystaniem Databricks.
+*  Obliczanie wektorów tesktu przy wykorzystaniu wytrenowanego modelu.
+*  Obliczanie odległości wektorów zapytania od wektorów dokumentów.
+*  Zwracamy wykinki z namniejszą odległością wektorową.
 
-![Projekt architektury](AzureProjektArchitektury.png)
+![Projekt architektury](docs/AzureProjektArchitektury.png)
     
 ---
 
@@ -44,6 +49,7 @@
 *   Integracja elementów systemu i dodanie prostego interfejsu użytkownika - 27.01.2021
 ### 3.2.    Zadania
 *   Ustawienie architektury Azure do nauki i obsługi modelu
+*   Stworzenie skryptów pre-processing'u
 *   Stworzenie modelu AI
 *   Zebranie danych testowych
 *   Nauczenie modelu
