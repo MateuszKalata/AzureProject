@@ -27,7 +27,8 @@
 ### 1.4.    Stos technologiczny
 *  Azure Machine Learning Studio
 *  Python
-*  Biblioteka Doc2Vec
+*  Biblioteki oferujące modele do tworzenia reprezentacji wektorowej tekstu, np. gensim, tensorflow-hub, sentence-transformers, fastText, transformers
+*  Biblioteka do preprocessingu tekstu, np. spacy
     
 ---
 
