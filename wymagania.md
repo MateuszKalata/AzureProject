@@ -28,7 +28,7 @@
 *  Azure Machine Learning Studio
 *  Python
 *  Biblioteki oferujące modele do tworzenia reprezentacji wektorowej tekstu, np. gensim, tensorflow-hub, sentence-transformers, fastText, transformers
-*  Biblioteka do preprocessingu tekstu, np. spacy
+*  Biblioteka do preprocessingu tekstu, np. spaCy
     
 ---
 
