@@ -1,0 +1,30 @@
+Basics
+------
+
+Based on Google's BERT model released in 2018.
+
+BERT - Bidirectional Encoder Representation from Transformers).
+In short, it applies the bidirectional training of Transformer (which is an attention model) to language modelling. It's in contrast with it's prior left-to-right and right-to-left training. The reasearch has shown it achieves better sense of meaning in the text this way.
+
+It's called Bidirectional, but in fact it reads the entire sentence at once, as to which a better name would be "non-directional".
+
+
+
+Training language models
+------------------------
+
+When training language models, it is challenge to define a prediction goal. BERT trains its model in 2 ways:
+
+1. Masked LM (MLM)
+15% of words in each sequence are replaced with [MASK] token. The model then attempts to predict the original value of the masked words, based on the context provided by the other, non-masked words in the sequence.
+
+2. Next Sentence Prediction (NSP)
+BERT receives pairs of sentences and learns to predict, if the second sentence in the pair is the subsequent sentence in the original document.
+
+
+
+Differences in roBERTa
+----------------------
+-> Builds on BERT and modifies hyperparameters, removing the "next-sentence" pretraining objective, and training with much larger mini-batches and learning rates
+-> Byte-level tokenizer
+-> No token_type_ids, just separating
