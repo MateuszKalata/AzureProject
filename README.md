@@ -16,3 +16,6 @@
 * Dobór metody liczenia odległości
 * Dobór rozmiaru fragmentów tekstu do przeszukań.
 * Wtępne ograniczanie danych
+
+1. Przygotowujemy dema, które będa robić i porównywać embedingi paragrafów z wikipedii. + ograniecie jak doternowywać modele.
+Wyświetlą 10 najlepszych wyników wyszukiwania. + badanie wpływu na model rzeczy wymienionych powyżej
