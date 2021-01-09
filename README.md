@@ -20,3 +20,11 @@
 
 1. Przygotowujemy dema, które będa robić i porównywać embedingi paragrafów z wikipedii. + ograniecie jak doternowywać modele.
 Wyświetlą 10 najlepszych wyników wyszukiwania. + badanie wpływu na model rzeczy wymienionych powyżej
+
+#### Zadania krok następny:
+
+* Douczanie pretrenowanych modeli RO/BERTA
+* Ocena douczania na podstawie 1000 par zdań
+* dobór parametrów douczania/modelu
+* badanie skuteczności funkcji ewaluacji (badania podobieństwa)
+
