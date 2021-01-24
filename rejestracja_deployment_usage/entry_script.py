@@ -1,7 +1,7 @@
 import json
 import numpy as np
 import os
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import SentenceTransformer, util
 
 
 def init():
@@ -12,13 +12,13 @@ def init():
 def run(data):
     try:
         data = np.array(json.loads(data))
-        embeddings = model.encode(sentences)
+        embeddings = model.encode(data)
 
         cos_sim = util.pytorch_cos_sim(embeddings, embeddings)
         all_sentence_combinations = []
         for i in range(len(cos_sim)-1):
             for j in range(i+1, len(cos_sim)):
-                all_sentence_combinations.append([cos_sim[i][j], i, j])
+                all_sentence_combinations.append([str(cos_sim[i][j]), i, j])
 
         return all_sentence_combinations
         
