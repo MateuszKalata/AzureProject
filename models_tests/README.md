@@ -1,4 +1,4 @@
-model : cds_bi_encoder
+model : **cds_bi_encoder**
 | Zapytania                                                                     |1  | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |10 |
 | -                                                                             |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | darmowy serwer http                                                           |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
@@ -13,7 +13,7 @@ model : cds_bi_encoder
 | kto śpiewa piosenkę w serialu czterdziestolatek                               |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
 
 
-Test modelu **cds_czywiesz_bi_encoder**
+model: **cds_czywiesz_bi_encoder**
 
 <!-- <img src=../docs/y.png height="30%">
 <img src=../docs/x.png height="3%"> -->
