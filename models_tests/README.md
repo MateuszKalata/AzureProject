@@ -1,3 +1,18 @@
+model : cds_bi_encoder
+| Zapytania                                                                     |1  | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |10 |
+| -                                                                             |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| darmowy serwer http                                                           |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
+| środki zwalczające infekcje bakteryjne                                        |<img src=../docs/y.png height="30%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> | 
+| pierwotniak posiadający nibynóżki                                             |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
+| najmniejsze żywe organizmy na ziemi                                           |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
+| substancje pozwalające zabarwić ciasto                                        |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
+| konstrukcja zapobiegająca wypadnięciu z drogi                                 |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
+| powlekana tkanina, wytrzymała mechanicznie, do stosowania w kuchni            |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
+| tradycyjne polskie danie z kapusty, mięsa i grzybów                           |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
+| drwniane, okrągłe, naczynie do prania                                         |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/y.png height="30%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
+| kto śpiewa piosenkę w serialu czterdziestolatek                               |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |<img src=../docs/x.png height="3%"> |
+
+
 Test modelu **cds_czywiesz_bi_encoder**
 
 <!-- <img src=../docs/y.png height="30%">
@@ -32,4 +47,22 @@ model : **cds_czywiesz_label_bi_encoder**
 | tradycyjne polskie danie z kapusty, mięsa i grzybów                           |<img src=../docs/y.png height="30%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|
 | drwniane, okrągłe, naczynie do prania                                         |<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|
 | kto śpiewa piosenkę w serialu czterdziestolatek                               |<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|<img src=../docs/x.png height="3%">|
+
+
+<!--
+templatka wykorzystywana do tworzenia tabelek w vimie
+model : cds_bi_encoder
+| Zapytania                                                                     |1  | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |10 |
+| -                                                                             |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| darmowy serwer http                                                           |\x |\x |\y |\x |\x |\x |\x |\y |\x |\x |
+| środki zwalczające infekcje bakteryjne                                        |\y |\y |\y |\y |\x |\y |\x |\y |\x |\y |
+| pierwotniak posiadający nibynóżki                                             |\x |\x |\x |\x |\x |\x |\x |\x |\x |\x |
+| najmniejsze żywe organizmy na ziemi                                           |\y |\x |\x |\x |\x |\x |\x |\x |\x |\x |
+| substancje pozwalające zabarwić ciasto                                        |\y |\x |\y |\x |\x |\x |\x |\x |\x |\x |
+| konstrukcja zapobiegająca wypadnięciu z drogi                                 |\y |\x |\y |\x |\x |\x |\x |\x |\x |\x |
+| powlekana tkanina, wytrzymała mechanicznie, do stosowania w kuchni            |\y |\x |\x |\x |\x |\x |\x |\x |\x |\x |
+| tradycyjne polskie danie z kapusty, mięsa i grzybów                           |\y |\x |\x |\x |\x |\x |\x |\x |\x |\x |
+| drwniane, okrągłe, naczynie do prania                                         |\x |\x |\x |\x |\x |\x |\y |\x |\x |\x |
+| kto śpiewa piosenkę w serialu czterdziestolatek                               |\x |\x |\x |\x |\x |\x |\x |\x |\x |\x |
+-->
 
