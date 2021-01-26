@@ -1,4 +1,18 @@
-# AzureProject
+# AzureProject - Document semantic search (EY)
+
+#### W ramach projektu zrealizowaliśmy:
+* wybór pretrenowanego modelu do tworzenia vektorowych reprezentacji tekstu
+* znalezienie i dostosowanie danych do nauki
+* dotrenowanie modelu
+* postwienie modelu w formie prostej aplikacji webowej
+
+#### Funkcjonalność aplikacji:
+* aplikacja przyjmuje na wejsciu fragment tekstu, następnie zwraca 10 najbanrdziej pasujących paragrafów z korpusu polskiej wikiedii
+ 
+#### Diagram architektury:
+* aplikacja jest postawiona jako AppService, a operacje na modelach dokonywane były w notebook'ach
+
+![](/docs/OstatecznyAzureDiagram.png)
 
 ## Wybór modelu do tworzenia reprezentacji wektorowych
 
