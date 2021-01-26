@@ -31,3 +31,7 @@ Schemat przygotowania danych:
 ## Badanie wpływu uczenia na rezultaty modelu
  
  [Wyniki trenowania - ewaluacja na zbiorach testowych](models_training/Trening.md) - trenowanie jest opisane od 2 punktu dokumentu
+ 
+ [Wyniki testów heurystycznych - relaizacja 15 zapytań](models_tests/README.md) - plik pokazuje na jakiej pozycji znalazły się rzeczywiście blisko powiązane z danym pytaniem rezultaty
+ 
+ W wyniku testów heurystycznych zobserwowaliśmy największa poprawę względem surowego modelu po douczeniu go na zbiorze *cds*, a nestępnie zbiorze *czywiesz*. Z racji, że nieu udało nam sie znaleźć cross-encodera dedykowanego językowi polskiemu wyniki uzyskane z jego wykorzystaniem w większości przypadków okazywały się gorsze, ale w niektórych scenariuszach był skuteczy. Możliwe jest, że bardziej staranne dobranie i douczenie cross-encodera mogłoby pozwolić na dodatkową poprawę wyników wyszukiwania. 
