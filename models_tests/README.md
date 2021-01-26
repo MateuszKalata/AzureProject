@@ -1,4 +1,7 @@
 # Wyniki testów
+
+Testy były przeprowadzane hurystycznie w tymm pliku zielonymi ikonkami zaznaczone są pozycje na których naszym zdaniem pojawiły się powiązane opowiedzi z danym zapytaniem. Dokładne rezultaty znajdują się [TUTAJ](EmbedingGeneratorForModels.ipynb). Testy były prowadzone na zbiorze danych polskiej wikipedii w tym celu wykorzystaliśmy pierwsze 250k paragrafów z 1,5mln, które posiadał pełny korpus. Dalo to zakres tyułów wikipedii od a* - co*.
+
 ### testy:
 - **bi_encoder**
 - **bi_encoder** (z cross-encoderem)
