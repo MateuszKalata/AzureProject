@@ -1,4 +1,14 @@
 # Wyniki testów
+### testy:
+- **cds_bi_encoder**
+- **cds_bi_encoder** (z cross-encoderem)
+- **cds_czywiesz_bi_encoder**
+- **cds_czywiesz_bi_encoder** z cross-encoderem
+- **cds_czywiesz_label_bi_encoder**
+- **cds_czywiesz_label_bi_encoder** z cross-encoderem
+- **czywiesz_bi_encoder**
+- **czywiesz_bi_encoder** z cross-encoderem
+
 ## cds_bi_encoder
 model : **cds_bi_encoder**
 | Zapytania                                                                     |1  | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |10 |
