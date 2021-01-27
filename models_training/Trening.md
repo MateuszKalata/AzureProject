@@ -7,7 +7,7 @@
    Ewaluację przeprowadzaliśmy na dwa sposoby:
 
    1. **Sprawdzanie podobieństwa embeddingów** - Wykorzystując 1000 par zdań ze zbioru **CDSCorpus**, które w skali od 0 do 5 zostały ocenione pod względem podobieństwa, liczone były współczynniki korelacji Pearsona oraz Spearmana pomiędzy wartościami podobieństwa przewidzianymi przez model oraz wartościami oryginalnymi.
-   2. **Wyszukiwanie informacji** - Wykorzystując 817 pytań i odpowiedzi ze zbioru **Czy wiesz?** dla każdego pytania wyszukiwane było 1, 3, 5 oraz 10 najbardziej podobnych odpowiedzi oraz za pomocą różnych metryk liczona była dokładność tego wyszukiwania, np. przy wykorzystaniu skuteczności.
+   2. **Wyszukiwanie informacji** - Wykorzystując 817 pytań i odpowiedzi ze zbioru **Czy wiesz?** dla każdego pytania wyszukiwane było 1, 3, 5 i 10 najbardziej podobnych odpowiedzi oraz za pomocą różnych metryk liczona była dokładność tego wyszukiwania, np. przy wykorzystaniu skuteczności.
 
    ### Sprawdzanie podobieństwa embeddingów
 
