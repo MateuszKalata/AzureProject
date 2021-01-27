@@ -36,7 +36,7 @@
    | 2    | stsb-xlm-r-multilingual              | 0.405024   | 0.524393   | 0.582935   | 0.646253    | 0.405024    | 0.405024 | 0.174798    | 0.524393 | 0.116587    | 0.582935 | 0.064625     | 0.646253  | 0.479739 | 0.519575 | 0.487758 |
    | 3    | quora-distilbert-multilingual        | 0.461491   | 0.578368   | 0.628192   | 0.690471    | 0.461491    | 0.461491 | 0.192789    | 0.578368 | 0.125638    | 0.628192 | 0.069047     | 0.690471  | 0.533318 | 0.570937 | 0.540081 |
 
-2. Trening na zbiorze CDSCorpus
+2. **Trening na zbiorze CDSCorpus**
 
    |      | epoch | steps | cosine_pearson | cosine_spearman | euclidean_pearson | euclidean_spearman | manhattan_pearson | manhattan_spearman | dot_pearson | dot_spearman |
    | ---- | ----- | ----- | -------------- | --------------- | ----------------- | ------------------ | ----------------- | ------------------ | ----------- | ------------ |
