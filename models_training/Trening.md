@@ -1,6 +1,15 @@
+
+
 # Trening
 
 1. Do fine-tuningu wybraliśmy wielojęzyczny model o nazwie **paraphrase-xlm-r-multilingual-v1**, ponieważ uzyskał lepsze wyniki niż pozostałe wielojęzyczne modele podczas ewaluacji na naszych zbiorach testowych.
+
+   Ewaluację przeprowadzaliśmy na dwa sposoby:
+
+   1. **Sprawdzanie podobieństwa embeddingów** - Wykorzystując 1000 par zdań ze zbioru **CDSCorpus**, które w skali od 0 do 5 zostały ocenione pod względem podobieństwa, liczone były współczynniki korelacji Pearsona oraz Spearmana pomiędzy wartościami podobieństwa przewidzianymi przez model oraz wartościami oryginalnymi.
+   2. **Wyszukiwanie informacji** - Wykorzystując 817 pytań i odpowiedzi ze zbioru **Czy wiesz?** dla każdego pytania wyszukiwane było 1, 3, 5 oraz 10 najbardziej podobnych odpowiedzi oraz za pomocą różnych metryk liczona była dokładność tego wyszukiwania, np. przy wykorzystaniu skuteczności.
+
+   ### Sprawdzanie podobieństwa embeddingów
 
    | model | cosine_pearson                       | cosine_spearman | euclidean_pearson | euclidean_spearman | manhattan_pearson | manhattan_spearman | dot_pearson | dot_spearman |          |
    | ----- | ------------------------------------ | --------------- | ----------------- | ------------------ | ----------------- | ------------------ | ----------- | ------------ | -------- |
@@ -9,21 +18,25 @@
    | 2     | stsb-xlm-r-multilingual              | 0.887779        | 0.885161          | 0.875350           | 0.876960          | 0.874208           | 0.876437    | 0.838509     | 0.829004 |
    | 3     | quora-distilbert-multilingual        | 0.821687        | 0.849722          | 0.841780           | 0.842773          | 0.841113           | 0.842188    | 0.786613     | 0.785287 |
 
-   | model | Accuracy@1                           | Accuracy@3 | Accuracy@5 | Accuracy@10 | Precision@1 | Recall@1 | Precision@3 | Recall@3 | Precision@5 | Recall@5 | Precision@10 | Recall@10 | MRR@10   | NDCG@10  | MAP@100  |          |
-   | ----- | ------------------------------------ | ---------- | ---------- | ----------- | ----------- | -------- | ----------- | -------- | ----------- | -------- | ------------ | --------- | -------- | -------- | -------- | -------- |
-   | 0     | distiluse-base-multilingual-cased-v2 | 0.644800   | 0.770812   | 0.811709    | 0.858626    | 0.644800 | 0.644800    | 0.256937 | 0.770812    | 0.162342 | 0.811709     | 0.085863  | 0.858626 | 0.716071 | 0.750547 | 0.720487 |
-   | 1     | paraphrase-xlm-r-multilingual-v1     | 0.836205   | 0.917584   | 0.937305    | 0.958896    | 0.836205 | 0.836205    | 0.305861 | 0.917584    | 0.187461 | 0.937305     | 0.095890  | 0.958896 | 0.880396 | 0.899635 | 0.881870 |
-   | 2     | stsb-xlm-r-multilingual              | 0.590201   | 0.714137   | 0.756487    | 0.808595    | 0.590201 | 0.590201    | 0.238046 | 0.714137    | 0.151297 | 0.756487     | 0.080859  | 0.808595 | 0.662591 | 0.697816 | 0.667771 |
-   | 3     | quora-distilbert-multilingual        | 0.602034   | 0.708532   | 0.747353    | 0.797177    | 0.602034 | 0.602034    | 0.236177 | 0.708532    | 0.149471 | 0.747353     | 0.079718  | 0.797177 | 0.665448 | 0.697121 | 0.670427 |
+   ### Wyszukiwanie informacji (krótkie odpowiedzi)
 
-   | model | Accuracy@1                           | Accuracy@3 | Accuracy@5 | Accuracy@10 | Precision@1 | Recall@1 | Precision@3 | Recall@3 | Precision@5 | Recall@5 | Precision@10 | Recall@10 | MRR@10   | NDCG@10  | MAP@100  |          |
-   | ----- | ------------------------------------ | ---------- | ---------- | ----------- | ----------- | -------- | ----------- | -------- | ----------- | -------- | ------------ | --------- | -------- | -------- | -------- | -------- |
-   | 0     | distiluse-base-multilingual-cased-v2 | 0.551381   | 0.678846   | 0.723895    | 0.779946    | 0.551381 | 0.551381    | 0.226282 | 0.678846    | 0.144779 | 0.723895     | 0.077995  | 0.779946 | 0.625284 | 0.662512 | 0.630700 |
-   | 1     | paraphrase-xlm-r-multilingual-v1     | 0.605979   | 0.724725   | 0.763546    | 0.809633    | 0.605979 | 0.605979    | 0.241575 | 0.724725    | 0.152709 | 0.763546     | 0.080963  | 0.809633 | 0.674149 | 0.706916 | 0.678707 |
-   | 2     | stsb-xlm-r-multilingual              | 0.405024   | 0.524393   | 0.582935    | 0.646253    | 0.405024 | 0.405024    | 0.174798 | 0.524393    | 0.116587 | 0.582935     | 0.064625  | 0.646253 | 0.479739 | 0.519575 | 0.487758 |
-   | 3     | quora-distilbert-multilingual        | 0.461491   | 0.578368   | 0.628192    | 0.690471    | 0.461491 | 0.461491    | 0.192789 | 0.578368    | 0.125638 | 0.628192     | 0.069047  | 0.690471 | 0.533318 | 0.570937 | 0.540081 |
+   |      | model                                | Accuracy@1 | Accuracy@3 | Accuracy@5 | Accuracy@10 | Precision@1 | Recall@1 | Precision@3 | Recall@3 | Precision@5 | Recall@5 | Precision@10 | Recall@10 | MRR@10   | NDCG@10  | MAP@100  |
+   | ---- | ------------------------------------ | ---------- | ---------- | ---------- | ----------- | ----------- | -------- | ----------- | -------- | ----------- | -------- | ------------ | --------- | -------- | -------- | -------- |
+   | 0    | distiluse-base-multilingual-cased-v2 | 0.644800   | 0.770812   | 0.811709   | 0.858626    | 0.644800    | 0.644800 | 0.256937    | 0.770812 | 0.162342    | 0.811709 | 0.085863     | 0.858626  | 0.716071 | 0.750547 | 0.720487 |
+   | 1    | paraphrase-xlm-r-multilingual-v1     | 0.836205   | 0.917584   | 0.937305   | 0.958896    | 0.836205    | 0.836205 | 0.305861    | 0.917584 | 0.187461    | 0.937305 | 0.095890     | 0.958896  | 0.880396 | 0.899635 | 0.881870 |
+   | 2    | stsb-xlm-r-multilingual              | 0.590201   | 0.714137   | 0.756487   | 0.808595    | 0.590201    | 0.590201 | 0.238046    | 0.714137 | 0.151297    | 0.756487 | 0.080859     | 0.808595  | 0.662591 | 0.697816 | 0.667771 |
+   | 3    | quora-distilbert-multilingual        | 0.602034   | 0.708532   | 0.747353   | 0.797177    | 0.602034    | 0.602034 | 0.236177    | 0.708532 | 0.149471    | 0.747353 | 0.079718     | 0.797177  | 0.665448 | 0.697121 | 0.670427 |
 
-2. Trenowanie na zbiorze CDS
+   ### Wyszukiwanie informacji (pasujące paragrafy)
+
+   |      | model                                | Accuracy@1 | Accuracy@3 | Accuracy@5 | Accuracy@10 | Precision@1 | Recall@1 | Precision@3 | Recall@3 | Precision@5 | Recall@5 | Precision@10 | Recall@10 | MRR@10   | NDCG@10  | MAP@100  |
+   | ---- | ------------------------------------ | ---------- | ---------- | ---------- | ----------- | ----------- | -------- | ----------- | -------- | ----------- | -------- | ------------ | --------- | -------- | -------- | -------- |
+   | 0    | distiluse-base-multilingual-cased-v2 | 0.551381   | 0.678846   | 0.723895   | 0.779946    | 0.551381    | 0.551381 | 0.226282    | 0.678846 | 0.144779    | 0.723895 | 0.077995     | 0.779946  | 0.625284 | 0.662512 | 0.630700 |
+   | 1    | paraphrase-xlm-r-multilingual-v1     | 0.605979   | 0.724725   | 0.763546   | 0.809633    | 0.605979    | 0.605979 | 0.241575    | 0.724725 | 0.152709    | 0.763546 | 0.080963     | 0.809633  | 0.674149 | 0.706916 | 0.678707 |
+   | 2    | stsb-xlm-r-multilingual              | 0.405024   | 0.524393   | 0.582935   | 0.646253    | 0.405024    | 0.405024 | 0.174798    | 0.524393 | 0.116587    | 0.582935 | 0.064625     | 0.646253  | 0.479739 | 0.519575 | 0.487758 |
+   | 3    | quora-distilbert-multilingual        | 0.461491   | 0.578368   | 0.628192   | 0.690471    | 0.461491    | 0.461491 | 0.192789    | 0.578368 | 0.125638    | 0.628192 | 0.069047     | 0.690471  | 0.533318 | 0.570937 | 0.540081 |
+
+2. Trening na zbiorze CDSCorpus
 
    |      | epoch | steps | cosine_pearson | cosine_spearman | euclidean_pearson | euclidean_spearman | manhattan_pearson | manhattan_spearman | dot_pearson | dot_spearman |
    | ---- | ----- | ----- | -------------- | --------------- | ----------------- | ------------------ | ----------------- | ------------------ | ----------- | ------------ |
@@ -37,7 +50,7 @@
    | ---- | ----- | ----- | ---------- | ---------- | ---------- | ----------- | ----------- | -------- | ----------- | -------- | ----------- | -------- | ------------ | --------- | ------- | -------- | -------- |
    | 0    | -1    | -1    | 0.935129   | 0.964504   | 0.977968   | 0.986536    | 0.935129    | 0.935129 | 0.321501    | 0.964504 | 0.195594    | 0.977968 | 0.098654     | 0.986536  | 0.95311 | 0.961268 | 0.953404 |
 
-3. Trenowanie na zbiorze Czy wiesz?
+3. **Trening na zbiorze Czy wiesz?**
 
    |      | epoch | steps | cosine_pearson | cosine_spearman | euclidean_pearson | euclidean_spearman | manhattan_pearson | manhattan_spearman | dot_pearson | dot_spearman |
    | ---- | ----- | ----- | -------------- | --------------- | ----------------- | ------------------ | ----------------- | ------------------ | ----------- | ------------ |
@@ -51,7 +64,7 @@
    | ---- | ----- | ----- | ---------- | ---------- | ---------- | ----------- | ----------- | -------- | ----------- | -------- | ----------- | -------- | ------------ | --------- | -------- | -------- | -------- |
    | 0    | -1    | -1    | 0.95104    | 0.974296   | 0.98164    | 0.985312    | 0.95104     | 0.95104  | 0.324765    | 0.974296 | 0.196328    | 0.98164  | 0.098531     | 0.985312  | 0.963547 | 0.968931 | 0.964054 |
 
-4. Trenowanie najpierw na CDS potem na Czy wiesz?
+4. **Trening najpierw na zbiorze CDSCorupus, potem na Czy wiesz?**
 
    |      | epoch | steps | cosine_pearson | cosine_spearman | euclidean_pearson | euclidean_spearman | manhattan_pearson | manhattan_spearman | dot_pearson | dot_spearman |
    | ---- | ----- | ----- | -------------- | --------------- | ----------------- | ------------------ | ----------------- | ------------------ | ----------- | ------------ |
@@ -65,7 +78,7 @@
    | ---- | ----- | ----- | ---------- | ---------- | ---------- | ----------- | ----------- | -------- | ----------- | -------- | ----------- | -------- | ------------ | --------- | -------- | -------- | -------- |
    | 0    | -1    | -1    | 0.946144   | 0.974296   | 0.980416   | 0.985312    | 0.946144    | 0.946144 | 0.324765    | 0.974296 | 0.196083    | 0.980416 | 0.098531     | 0.985312  | 0.961201 | 0.967164 | 0.961576 |
 
-5. Trenowanie najpierw na Czy wiesz?, potem na CDS
+5. **Trening najpierw na zbiorze Czy wiesz?, a potem na CDS**
 
    |      | epoch | steps | cosine_pearson | cosine_spearman | euclidean_pearson | euclidean_spearman | manhattan_pearson | manhattan_spearman | dot_pearson | dot_spearman |
    | ---- | ----- | ----- | -------------- | --------------- | ----------------- | ------------------ | ----------------- | ------------------ | ----------- | ------------ |
@@ -79,9 +92,15 @@
    | ---- | ----- | ----- | ---------- | ---------- | ---------- | ----------- | ----------- | -------- | ----------- | -------- | ----------- | -------- | ------------ | --------- | -------- | -------- | -------- |
    | 0    | -1    | -1    | 0.932681   | 0.968176   | 0.976744   | 0.984088    | 0.932681    | 0.932681 | 0.322725    | 0.968176 | 0.195349    | 0.976744 | 0.098409     | 0.984088  | 0.952407 | 0.960227 | 0.952917 |
 
-6. Cross-encoder + Bi-encoder - labele
+6. **Wytrenowanie Cross-Encodera na zbiorze CDSCorpus w celu zaetykietowania zbioru Czy wiesz? pod względem podobieństwa pytań i odpowiedzi, następnie wytrenowanie Bi-Encodera na zbiorze danych powstałym ze złączenia zbioru CDSCorpus oraz zaetykietowanego zbioru Czy wiesz?**
 
-   Cross-encoder
+   W celu dotrenowania Cross-Encodera został użyty model **bert-base-multilingual-cased** z biblioteki HuggingFace, który nie był wcześniej trenowany specjalnie do produkowania jak najbardziej podobnych embeddingów dla podobnych znaczeniowo tekstów, lecz tylko na zadaniach typowych dla modelu BERT (MLM, Next Sentence Prediction).
+
+   Różnica pomiędzy Bi-Encoderem a Cross-Encoderem polega na tym, że Bi-Encoder na wejściu przyjmuje zdania a następnie produkuje dla nich embeddingi, natomiast Cross-Encoder na wejściu przyjmuje pary zdań, a na wyjściu zwraca liczbę od 0 do 1 oznaczającą podobieństwo pomiędzy dwoma zdaniami.
+
+   ![BiEncoder](https://raw.githubusercontent.com/UKPLab/sentence-transformers/master/docs/img/Bi_vs_Cross-Encoder.png)
+
+   **Trening Cross-Encodera**
 
    |      | epoch | steps | Pearson_Correlation | Spearman_Correlation |
    | ---- | ----- | ----- | ------------------- | -------------------- |
@@ -96,7 +115,7 @@
    | 8    | 8     | -1    | 0.957591            | 0.948188             |
    | 9    | 9     | -1    | 0.957573            | 0.948150             |
 
-   Bi-encoder
+   **Trening Bi-Encodera**
 
    |      | epoch | steps | cosine_pearson | cosine_spearman | euclidean_pearson | euclidean_spearman | manhattan_pearson | manhattan_spearman | dot_pearson | dot_spearman |
    | ---- | ----- | ----- | -------------- | --------------- | ----------------- | ------------------ | ----------------- | ------------------ | ----------- | ------------ |
