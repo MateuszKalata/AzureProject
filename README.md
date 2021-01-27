@@ -12,7 +12,7 @@
 #### Diagram architektury:
 * aplikacja jest postawiona jako AppService, a operacje na modelach dokonywane były w notebook'ach
 
-![](/docs/OstatecznyAzureDiagram.png)
+![](/docs/OstatecznyAzureDiagram2.png)
 
 ## Wybór modelu do tworzenia reprezentacji wektorowych
 
