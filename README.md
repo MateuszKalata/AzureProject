@@ -1,5 +1,7 @@
 # AzureProject - Document semantic search (EY)
 
+Aplikacja: [LINK](https://reacappappnpm.azurewebsites.net/)
+
 #### W ramach projektu zrealizowaliśmy:
 * wybór pretrenowanego modelu do tworzenia wektorowych reprezentacji tekstu
 * znalezienie i dostosowanie danych do nauki
